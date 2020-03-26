@@ -1,4 +1,6 @@
 From johnnychen94/juliabook:1.3
+# add keyring
+RUN apt-get install debian-archive-keyring
 
 # add webupd8 repository
 RUN \
