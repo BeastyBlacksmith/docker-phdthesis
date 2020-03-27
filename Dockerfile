@@ -1,6 +1,7 @@
 From johnnychen94/juliabook:1.3
 # add keyring
-RUN apt-get install debian-archive-keyring
+RUN apt-get install debian-keyring
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys C2518248EEA14886
 
 # add webupd8 repository
 RUN \
